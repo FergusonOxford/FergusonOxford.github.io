@@ -36,8 +36,8 @@
                 if (xhr.status === 200) {
                     const imgURL = URL.createObjectURL(xhr.response);
                     const catDiv = document.getElementById("cat");
-                    json = xhr.responseText
-                    js = JSON.parse(json)
+                    //json = xhr.responseText
+                    //js = JSON.parse(json)
 
                    //catDiv.innerHTML = json
                     catDiv.innerHTML = `<img src="${imgURL}" alt="Random Cat Image" />`;
