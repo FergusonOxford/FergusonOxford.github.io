@@ -28,7 +28,7 @@
         //js = null
         function fetchCatImage() {
             const xhr = new XMLHttpRequest();
-            xhr.open("GET", "https://cataas.com/cat", true);
+            xhr.open("GET", "https://cataas.com/cat/evil", true);
            // xhr.setRequestHeader("Accept", "application/json")
            xhr.responseType = "blob"; // Ensure the response is an image
           
@@ -39,7 +39,7 @@
                     json = xhr.responseText
                     js = JSON.parse(json)
 
-                    /catDiv.innerHTML = json
+                   //catDiv.innerHTML = json
                     catDiv.innerHTML = `<img src="${imgURL}" alt="Random Cat Image" />`;
                 } else {
                     console.error("Failed to load cat image.");
