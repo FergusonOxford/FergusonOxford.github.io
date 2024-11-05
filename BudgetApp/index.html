@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budgeting Calculator</h1>
+        <div class="input-section">
+            <label for="income">Monthly Income ($):</label>
+            <input type="number" id="income" placeholder="e.g., 5000">
+
+            <label for="expenses">Monthly Expenses (excluding rent) ($):</label>
+            <input type="number" id="expenses" placeholder="e.g., 2000">
+
+            <label for="savings">Desired Monthly Savings ($):</label>
+            <input type="number" id="savings" placeholder="e.g., 500">
+
+            <button id="calculateBtn">Calculate Available Rent</button>
+        </div>
+
+        <div class="result-section">
+            <h2>Results</h2>
+            <p id="rentAmount">Available for Rent: $<span class="result"></span></p>
+            <p id="housePrice">Estimated House Price: $<span class="result"></span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
